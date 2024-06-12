@@ -1,0 +1,390 @@
+.admin-mainG{
+    display: grid;
+    width: 100%;
+    /* min-height: 100vh; */
+    grid-template-areas: " nav nav nav nav nav nav"
+                         " home home home home  home  home"
+                         " home home home home  home  home"
+                         " home home home home  home  home"
+                         " home home home home  home  home"
+                         " home home home home  home  home"
+                         " home home home home  home  home"
+                         " home home home home  home  home"
+                         " home home home home  home  home";
+}
+.headG{
+   
+   
+margin-left: 317.500px;
+margin-right: 317.516px;
+    grid-area: nav;
+    height: 43px;
+    
+    width: 1189.980px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    
+    
+    float: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    
+}
+.adminHomeG{
+    grid-area:home ;
+    position: relative;
+width: 100%;
+    
+   
+}
+.BackgrndImg{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  
+    
+}
+.BackgrndImgSignIN{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  
+}
+
+.iconDiv{
+    width:386.565px;
+    height:40px;
+    
+    z-index: 999;
+    position:absolute;
+}
+.demo-simple-select-label{
+    color: white;
+    
+    
+}
+.demo-simple-select{
+    
+    color: rgb(255, 255, 255);
+    background: transparent;
+    width: 124px;
+    height: 32px;
+    border: 1 solid #ccc;
+
+}
+.headfulldiv{
+    display: flex;
+    align-items: center;
+}
+.btnSignIn{
+    margin-left: 22px;
+    
+}
+
+.image-container {
+    display: block;
+    width: 100%;
+    height: auto;
+    position:relative;
+  }
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+    width: 863.484px;
+    height: 223px;
+    
+  }
+  .heading1{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+  }
+  .heading2{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 24px;
+    margin-top: 16px;
+  }
+  .heading3{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 20px;
+    margin-top: 16px;
+    margin: 1.5rem 0 0;
+font-weight: 400;
+  }
+  .emailInptBox{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 16px;
+   gap: 8px;
+   font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+
+  }
+  
+  #outlined-basic-label{
+    color: white;
+
+  }
+  .default-ltr-cache-1yz1b0z{
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(35,35,35);
+  }
+  .EnjoyTvDiv{
+    height: 439.734px;
+    background-color: black;
+    padding: 72px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .enjoyInnerDiv{
+    width: 1173.980px;
+    height: 439.734px;
+    margin: auto;
+    color: white;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .default-ltr-cache-jpuyb8{
+    font-size: 3rem;
+    font-weight: 900;
+    width: 580.984px;
+    height: 62px;
+  }
+  .default-ltr-cache-jpuyb8-dwnld{
+    font-size: 3rem;
+    font-weight: 900;
+    width: 580.984px;
+    height: 124px;
+  }
+  .default-ltr-cache-10i4ild{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 580.984px;
+    height: 62px;
+    margin: 16px 0px 0px;
+  }
+  .default-ltr-cache-7cljuy{
+    flex-basis: 50%;
+    padding: 0;
+    z-index: 1;
+    height: 439.734px;
+  }
+  .default-ltr-cache-bjn8wh{
+    position: relative; 
+  }
+  .default-ltr-cache-1d3w5wq{
+    width: 100%;
+  }
+  .default-ltr-cache-m5f3qu{
+    z-index: -1;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .default-ltr-cache-xfttou{
+    padding: 0.5rem 0.75rem;
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 0 auto;
+    background: rgb(0,0,0);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
+    min-width: 15rem;
+    padding: 0.25rem 0.65rem;
+    border: 2px solid rgba(128,128,128,0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    z-index: 1;
+    width: 290.484px;
+    height: 84px;
+  }
+  .default-ltr-cache-1cn8kex{
+    width: 57.141px;
+    height: 84px;
+    margin-right: 16px;
+  }
+  .default-ltr-cache-1t1z3a4{
+    width: 57.141px;
+    height: 84px;
+  }
+  .default-ltr-cache-tcf860{
+    text-align: left;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    margin: 0.3rem 0;
+    width: 169.344px;
+    height: 38px;
+  }
+  .default-ltr-cache-162uqtg{
+    font-size: 1rem;
+    color: rgb(255,255,255);
+    font-weight: 500;
+    width: 169.344px;
+    height: 20px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  }
+  .default-ltr-cache-44ib4m{
+    width: 169.344px;
+    height: 20px;
+    font-size: 400;
+    color: #0071eb;
+    font-size: 0.875rem;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  }
+  .default-ltr-cache-1q4up1i{
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgb(0,0,0);
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    content: '';
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  .default-ltr-cache-1626rqb {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .dicriptionNetflix{
+    height: 439.734px;
+    background-color: black;
+    padding: 72px 0px;
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  .dicriptionNetflixQues{
+    /* height: 439.734px; */
+    background-color: black;
+    padding: 72px 0px;
+    /* display: flex;
+    justify-content: center; */
+  }
+  .discriptionNetflixInnerDiv{
+    width: 1173.980px;
+    height: 439.734px;
+    margin: auto;
+    color: white;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .discriptionNetflixInnerQuesDiv{
+    width: 1173.980px;
+    /* height: 439.734px; */
+    margin: auto;
+    color: white;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: center; */
+  }
+  
+.euy28771{
+  font-size: 2rem;
+    font-weight: 700;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    margin-bottom: 16px;
+}
+.Questionsdiv{
+  /* width: 909.609px; */
+  height: 36px;
+  padding: 24px;
+  background-color: rgb(45,45,45);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 4px;
+  
+
+}
+.queHeadDiv{
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 24px;
+    text-align: left;
+}
+.DescriptionDiv{
+  
+  padding: 24px;
+  background-color: rgb(45,45,45);
+  color: white;
+  font-size: 1.5rem;
+    font-weight: 400;
+  text-align: left;
+  margin-top: 1px;
+  
+}

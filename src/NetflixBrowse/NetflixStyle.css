@@ -1,0 +1,403 @@
+.admin-mainNB {
+    display: grid;
+    width: 100%;
+    /* min-height: 100vh; */
+    grid-template-areas: " nav nav nav nav nav nav"
+        " home home home home  home  home"
+        " home home home home  home  home"
+        " home home home home  home  home"
+        " home home home home  home  home"
+        " home home home home  home  home"
+        " home home home home  home  home"
+        " home home home home  home  home"
+        " home home home home  home  home";
+}
+
+.headNB {
+    grid-area: nav;
+    width: 100%;
+    height: 68px;
+    float: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+
+}
+
+.adminHomeNB {
+    grid-area: home;
+    position: relative;
+    width: 100%;
+    background: #141414;
+
+
+
+}
+
+.HeadDiv1 {
+    height: 68px;
+    width: 1785px;
+    padding: 0px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.BackgrndImg {
+    width: 100%;
+
+    object-fit: fill;
+    height: 1071.560px;
+}
+
+.netflixLogoContainer {
+    width: 92.516px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+.tabbed-primary-navigation {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-menu {
+    display: none;
+    margin-left: 20px;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.tabbed-primary-navigation a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
+}
+
+.secondary-navigation {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    /* justify-content: flex-end; */
+    position: absolute;
+    right: 2%;
+    top: 0;
+}
+
+.searchTab {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav-element {
+    margin-right: 15px;
+    font-size: 14px;
+    position: relative;
+
+}
+.nav-element a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 14px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.notifications-menu {
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    line-height: 1;
+    margin-top: 0.2em;
+    padding: 2px 6px 3px;
+    position: relative;
+}
+
+.caret {
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    height: 0;
+    margin-left: 10px;
+    transition: transform 367ms cubic-bezier(.21, 0, .07, 1);
+    width: 0;
+}
+
+.profile-icon {
+    border-radius: 4px;
+    height: 32px;
+    /* vertical-align: middle;
+    width: 32px; */
+}
+
+.profile_dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background: #191919;
+    padding: 4px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+
+.profile_dropdown p {
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+.nav-element:hover .profile_dropdown {
+    display: block;
+}
+
+.hero {
+    position: relative;
+}
+
+.banner_img {
+    width: 100%;
+}
+
+.trailer-vignettevignette-layer {
+    width: 100%;
+    /* Adjusted to match the container width */
+    height: 100%;
+    /* Adjusted to match the container height */
+    background: linear-gradient(77deg, rgba(0, 0, 0, .6), transparent 85%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity .5s;
+    z-index: 1;
+}
+
+.hero-caption {
+    position: absolute;
+    /* width: 100%; */
+    padding-left: 6%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.caption_img {
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+
+.synopsisno-supplemental {
+    max-width: 700px;
+    font-size: 1.2vw;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+}
+
+.hero_btns {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 120px;
+}
+
+.play_btn img {
+    width: 25px;
+}
+
+.play_btn {
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.more_btn {
+    color: #fff;
+    background: #6d6d6eb3;
+    border: 0;
+    outline: 0;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero_btns .play_btn:hover {
+    background: #ffffffbf;
+}
+
+.hero_btns .more_btn:hover {
+    background: #6d6d6e66;
+}
+
+.more-cards{
+    padding-left: 6%;
+}
+.footer{
+    padding: 30px 4%;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: gray;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 14px;
+}
+.footer_icons{
+    display: flex;
+    gap: 20px;
+    margin: 40px 50px;
+}
+.footer_icons img{
+    width: 30px;
+cursor: pointer;
+}
+.footer ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    margin-bottom: 30px;
+    list-style: none;
+    
+}
+.copyright_text{
+    color: gray;
+    font-size: 14px;
+    margin-left: 40px;
+}
+.btn_srvcode{
+    border:1px solid gray;
+    text-align: center;
+    background: #141414;
+    color: gray;
+    padding: 6.500px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.btn_srvcode:hover{
+    color: white;
+    border: 1px solid white;
+}
+.titlecards{
+    
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.titlecards h2{
+    margin-bottom: 8px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+}
+.card_list{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    width: 1785px;
+    position: relative;
+}
+.card_list::-webkit-scrollbar{
+    display: none;
+}
+.card_list img{
+    width: 293.656px;
+    height: 165.328px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card_list .card{
+    position: relative;
+
+    
+}
+
+.hoverClass{
+    z-index: 10;
+    height: max-content;
+    width: 20rem;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 3px 10px;
+    background-color: #181818;
+    transition: 0.3s ease-in-out;
+}
+.image-video-container{
+    position: relative;
+    height: 140px;
+    
+}
+.image-video-container img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0.3rem;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+}
+.image-video-container video{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0,3em;
+    top: 0;
+    z-index: 3;
+    position: absolute;
+}
+.info-container{
+    padding: 1rem;
+    gap: 0.5rem;
+
+}
+.info-container h3  {
+   
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.classIcon .classControls{
+display: flex;
+gap: 1rem;
+color: white;
+}
+.classIcon svg{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        color: #b8b8b8;
+    }
+}
