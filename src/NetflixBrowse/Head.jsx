@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import netflixLogo from './netflixImages/netflix.svg'
 
 const Head = () => {
+    const  navRef = useRef();
+
+    useEffect(()=>{
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY >= 80){
+                navRef.current.classList.add('nav-dark')
+            }else{
+                navRef.current.classList.remove('nav-dark')
+
+            }
+        })
+    },[])
+
     return (
-        <div className='HeadDiv1'>
+        <div ref={navRef} className='HeadDiv1'>
             <div style={{ display: "flex", alignItems: "center" }}>
                 <img src={netflixLogo} alt='img' className='netflixLogoContainer'></img>
 

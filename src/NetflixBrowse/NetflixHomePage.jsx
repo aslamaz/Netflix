@@ -1,5 +1,4 @@
 import React from 'react'
-// import slideimg from './netflixImages/slidImg.jpg'
 import TitleCards from './TitleCards'
 import Footer from './Footer'
 

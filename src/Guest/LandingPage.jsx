@@ -44,12 +44,12 @@ const CssTextField = styled(TextField)({
 const SignInPageBtn = styled(Button)({
   backgroundColor: 'rgb(229,9,20)',
   width: "205.234px",
-   height: "56px" ,
-  textTransform:"none",
+  height: "56px",
+  textTransform: "none",
   fontFamily: "Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif",
-  fontSize:"24px",
+  fontSize: "24px",
   '&:hover': {
-      backgroundColor: 'rgb(193 14 23)',
+    backgroundColor: 'rgb(193 14 23)',
   },
 });
 
@@ -100,7 +100,7 @@ const LandingPage = () => {
             </div>
             <div className='emailInptBox'>
               <CssTextField label="Email address" id="custom-css-outlined-input" />
-             <Link to={'/User/Registration'} > <SignInPageBtn variant="contained" endIcon={<ArrowForward />}>Get Started</SignInPageBtn></Link>
+              <Link to={'/User/Registration'} > <SignInPageBtn variant="contained" endIcon={<ArrowForward />}>Get Started</SignInPageBtn></Link>
             </div>
           </div>
 
@@ -365,9 +365,9 @@ const LandingPage = () => {
 
 
         </div>
-        <div style={{marginTop:"40px"}}></div>
+        <div style={{ marginTop: "40px" }}></div>
         <div class="default-ltr-cache-1yz1b0z "></div>
-        <Footer/>
+        <Footer />
 
       </div>
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import netflixTrailer from './netflixImages/Godzilla x Kong.mp4'
 import { IoPlayCircleSharp } from "react-icons/io5"
 import { RiThumbDownFill, RiThumbUpFill } from "react-icons/ri"
@@ -36,94 +36,30 @@ const TitleCards = ({ title, category }) => {
             .catch(err => console.error(err));
 
         cardsRef.current.addEventListener('wheel', handleWheel)
-    }, )
-    
+    },)
+
     return (
         <div>
             <div className="titlecards">
 
                 <h2>{title ? title : "Popular on Netflix"}</h2>
 
-                <div className="card_list" ref={cardsRef}>
-                    {showMovies.map((movies, key) => {
-                        return <div className="card"
-                        key={key}
-                        onMouseEnter={() => setHoveredIndex(key)}
-                        onMouseLeave={() => setHoveredIndex(null)}
-                        >
-                            <img src={`https://image.tmdb.org/t/p/w500` + movies.backdrop_path} alt="img" />
-                            {
-                                hoveredIndex === key && (
-                                    <div className="hoverClass">
-                                        <div className="image-video-container">
-                                            <img src={`https://image.tmdb.org/t/p/w500` + movies.backdrop_path} alt="img"
-                                                onClick={() => navigate("/player")}
-                                            />
-                                            <video
-                                            src={netflixTrailer}
-                                            autoPlay
-                                            loop
-                                            muted
-                                            onClick={() => navigate("/player")}
-                                            />
+                
+                    <div className="card_list" ref={cardsRef}>
+                        {showMovies.map((movies, key) => {
+                            return <Link to={`/Player/${movies.id}`} className="card" key={key}>
+                            
+                                <img src={`https://image.tmdb.org/t/p/w500` + movies.backdrop_path} alt="img" />
 
-                                        </div>
-                                        <div className="info-container">
-                                            <h3 className='Moviename' onClick={() => navigate("/player")}>
-                                                {movies.original_title}
-                                            </h3>
-                                            <div className="classIcon">
-                                                <div className="classControls">
-                                                    <IoPlayCircleSharp
-                                                        title='play'
-                                                        onClick={() => navigate("/player")}
-                                                    />
-                                                    <RiThumbUpFill title='Like' />
-                                                    <RiThumbDownFill title='DisLike' />
-                                                    {/* {
-                                                        isLiked ? (
-                                                            <BsCheck title='remove from List' />
-                                                        ) : (
-                                                            <AiOutlinePlus title='Add to my List' />
-                                                        )
-                                                    } */}
-                                                </div>
-                                                <div className="class-info">
-                                                    <BiChevronDown title='More Info' />
-                                                </div>
-                                            </div>
+                                </Link>
 
-                                        </div>
-                                    </div>
-                                )
-                            }
-                        </div>
-
-                    })}
-                </div>
+                        })}
+                    </div>
+                
 
             </div>
 
-            {/* <div className="titlecards">
 
-                <h2>Popular on Netflix</h2>
-
-                <div className="card_list" ref={cardsRef}>
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                    <img src={slideimg} alt="img" />
-                </div>
-
-
-            </div> */}
         </div>
     )
 }
